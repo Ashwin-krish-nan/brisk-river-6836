@@ -1,0 +1,134 @@
+body{
+
+}
+
+.p_container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#signin_page{
+    width:40%;
+    margin: 2%;
+    margin-top:10%;
+   padding:3%;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   
+}
+#signin_page:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+#signin_page label{
+    display:block;
+    padding-bottom:2%;
+    text-align: start;
+    font-size: 20px;
+}
+
+#signin_page input{
+    display:block;
+    padding:3%;
+    width:91%;
+    font-size:100%;
+}
+
+#button{
+    width:98%;
+    font-size:120%;
+    font-weight: bolder;
+    background-color: rgb(192, 192, 250);
+    border:none;
+    border-radius:8% 5%;  
+}
+#button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#sign_up_link{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#signin_page img{
+    width:40%;
+    margin-left:27%;
+}
+
+
+/* slider */       /* -------------------------------------------------------- */
+.slider{
+
+ height: 600px;
+ margin: auto;
+ position: relative;
+ width: 1000px;
+ display: grid;
+place-items:center;
+overflow: hidden;
+/* border: 2px solid black; */
+}
+.slide-track{
+display: flex;
+/* height: calc(auto * 18); */
+width: calc(auto * 18);
+animation: scroll 40s linear infinite;/* border: 1px solid blue; */
+}
+@keyframes scroll {
+ 0% {
+  transform: translateX(0);
+ }
+ 100%{
+  transform: translateX(calc(-550px * 9));
+ }
+}
+.slide-track:hover{
+ animation-play-state: paused;
+}
+
+
+.slide{
+ height: 232px;
+ width: 40vw;
+ display: flex;
+ align-items: center;
+/*  padding-right: 50px;
+ padding-left: 50px; */
+ perspective: 100px;
+ /* border: 1px solid red; */
+}
+.slide>a>img{
+ width: 100%;
+ height: auto;
+ transition: transform 1s;
+}
+/* .slide>img:hover{
+ transform: translateZ(20px);
+} */
+.slider::before,
+.slider::after{
+ background: linear-gradient(to right,rgba(255,255,255,1) 0%,
+ rgba(255,255,255,1) 100%);
+ /* content: ''; */
+ height: 0%;
+ position: absolute;
+ width: 15%;
+ z-index: 2;
+ 
+}
+.slider::before{
+ left: 0;
+ top: 0;
+}
+.slider::after{
+ right: 0;
+ top:0;
+ transform:rotateZ(180deg);
+}
+.sli-img{
+    text-align: center;
+}
+
+
