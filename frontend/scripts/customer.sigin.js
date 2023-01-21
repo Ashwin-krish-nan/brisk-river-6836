@@ -48,7 +48,7 @@ let  sign_IN= document.querySelector("#signin_page form")
 
         if(res.ok==true){
             alert(`Welcome, You are Successfully signedin`)
-            window.location.href = "./index.html"
+            window.location.href = "./index2.html"
         }
     } catch (error) {
         console.log(error);

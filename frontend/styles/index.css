@@ -197,6 +197,7 @@ text-align: center;
 /* global */
 .card > img {
   width: 100%;
+  height: 70%;
 }
 
 h1 {
@@ -229,15 +230,15 @@ h1 {
 .card {
   border: 1px solid #ccc;
   /* border-radius: 1rem; */
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
+ /*  border-right: 1px solid #000;
+  border-bottom: 1px solid #000; */
   overflow: hidden;
   box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 100;
-  padding-top: 40px;
-  padding-left: 40px;
-  height: 400px;
+ /*  padding-top: 40px;
+  padding-left: 40px; */
+  height: auto;
 }
 
 .card__content {
@@ -458,4 +459,66 @@ h1 {
 }
 .page-urls > div > h1:hover {
   color: darkorchid;
+}
+
+
+/* container */
+
+#conts{
+  display: grid;
+  grid-template-columns: repeat(5,300px);
+  grid-template-rows: repeat(auto);
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+/*   border: 1px solid black; */
+  margin-top: 20px;
+}
+#conts>div{
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+ /*  width: 350px; */
+  height: 400px;
+}
+#conts>div>p{
+  text-transform: uppercase;
+  font-size: larger;
+}
+#conts>div>img{
+  width: 100%;
+}
+.bottom-influ{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+.bottom-influ>div>img{
+   height: 40px;
+ width: 20%;
+ border-radius: 100%;
+ cursor: pointer;
+}
+.bottom-influ>div{
+  color: grey;
+}
+
+#bottom-socials{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#bottom-socials>div{
+  margin-right: 10px;
+  margin-top: -20px;
+  padding: 10px;
+  border-radius: 90%;
+/*    border: 1px solid black; */
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+cursor: pointer;
+  
 }

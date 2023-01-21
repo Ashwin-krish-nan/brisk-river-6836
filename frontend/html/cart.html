@@ -4,97 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://target.scene7.com/is/image/Target/GUEST_923aa63f-ff3f-48ec-9ea8-c98d69a50db0?wid=488&hei=488&fmt=pjpeg">
- <link rel="stylesheet" href="../styles/navbar.css">
- <link rel="stylesheet" href="../styles/index.css">
-       <script src="https://kit.fontawesome.com/ff29a3d799.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ff29a3d799.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+     <link rel="stylesheet" href="../styles/navbar.css">
       <script src="../scripts/navbar.js" defer ></script>
-
-   <link rel="stylesheet" href="../styles/product.css">
-    <title>Women Product</title>
-      <style>
-        #parent{
-            background-color: #f5f4f2;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-top: 1px solid black;
-            margin-top: 20px;
-            padding-top: 50px;
-            padding-bottom: 48px;
-            width: 100%;
-            /* height:50px; */
-        }
-        #child_1{
-            width: 40%;
-            margin-top: -180px;
-            /* text-align: center; */
-            /* border: 1px solid black; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            /* align-items: center; */
-            margin-left: 200px;
-
-        }
-        #child_2{
-            display: flex;
-            justify-content: space-evenly;
-            width:40%;
-            margin-left: -280px;
-        }
-        #child_2>div>a{
-            display: block;
-            text-decoration: none;
-            color: rgb(51, 46, 46);
-            margin-left: 5px;
-        }
-        #child_1>:nth-child(1)>img{
-            backface-visibility: hidden;
-            width: 18%;
-            background-color: #000;
-        }
-        #child_1>:nth-child(2){
-           width:26%;
-        }
-        #child_1>:nth-child(3)>p{
-          color:rgb(100, 99, 99);
-        }
-       
-        .pr{
-          color:black;
-          font-weight: bold;
-        }
-        #child_1>:nth-child(5)>:nth-child(1){
-          width:20%;
-        }
-        #child_1>:nth-child(5)>:nth-child(2){
-          width:23%;
-          margin-left: 12px;
-        }
-        #child_1>:nth-child(6){
-          margin:25px 0;
-        }
-        #child_1>:nth-child(4){
-          margin-bottom:15px;
-        }
-        h3{
-            font-weight:light;
-            color: rgb(32, 30, 30);
-        }
-        #child_2>:nth-child(1){
-            padding-left: -50px;
-
-        }
-        #child_2>div>a{
-            font-size: 16px;
-            margin-top: 8px;
-
-        }
-
-
-
-    </style>
+    <title>CART</title>
 </head>
 <body>
 <div id="navBar">
@@ -563,113 +478,71 @@
 
 
 </div>
-<!-- CIRCLES ENDED -->
-
-
-    <div>
-        <div class="sort">
-            <div class="sort-child">
-                <p id="item"></p>
-                <select name="so" id="sort-fun">
-                    <option value="">Sort By</option>
-                    <option value="LTH">Price Low To High</option>
-                    <option value="HTL">Price High To Low</option>
-                    <option value="R-LTH">Rating Low To High</option>
-                    <option value="R-HTL">Rating High To Low</option>
-                </select>
-            </div>
-        </div>
-        <div class="product">
-            <div class="filter">
-                <h3>Filter by:</h3>
-                <hr>
-                <h4>Rating</h4>
-                <input class="box" type="checkbox" value="7"><span>Above 7+</span><br>
-                <input class="box" type="checkbox" value="8"><span>Above 8+</span><br>
-                <input class="box" type="checkbox" value="9"><span>Above 9+</span><br>
-                <hr>
-                <h4>Price</h4>
-                <input class="box" type="checkbox" value="30"><span>₹0-₹30</span><br>
-                <input class="box" type="checkbox" value="50"><span>₹30-₹50</span><br>
-                <input class="box" type="checkbox" value="70"><span>₹50-₹70</span><br>
-                <input class="box" type="checkbox" value="71"><span>Above ₹70+</span><br>
-                <hr>
-                <div class="photo">
-                   <!--  <img src="" alt="offer"> -->
-                </div>
-            </div>
-            <div class="pro-card">
-                
-            </div>
+    <div class="shop-item">
+        <h2>Shopping Bag</h2>
+        <div id="item">
+            <!-- <h4>4 Items</h4> -->
         </div>
     </div>
-   
- 
-<div id="parent">
-        <div id="child_1">
-            <div>
-               <!--  <img src="https://cdn.trustpilot.net/brand-assets/1.1.0/logo-white.svg" alt=""> -->
-                <!-- <h1>TrustPilot</h1> -->
-            </div>
-            <div>
-                <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg" alt="">
-            </div>
-            <div>
-                <p>TrustScore &nbsp;<span class="pr">4.4</span><br><span class="pr">2,954</span>&nbsp;&nbsp;reviews</p>
-
-            </div>
-            <div>
-                <img src="./images/icons8-facebook-f-30.png" alt="">
-                <img src="./images/icons8-instagram-24.png" alt="">
-            </div>
-            <div>
-                <img  src="https://www.rdsdelivery.com/wp-content/uploads/2016/11/apple-app-store-icon-300x104.png.webp" alt="">
-                <img onClick="playstoreLink()"src="https://images.squarespace-cdn.com/content/v1/57923378ebbd1a9829570952/1550736662154-RCDC50WSXTAGPGE59P0T/6a248cbe42c32b17de10b5cc8e9c0f69.png?format=300w" alt="">
-            </div>
-            <div>
-                Learn about the NR app for iPhone, iPad and Android.
-            </div>
-            <div>© 2022 NR</div>
-            
+        <div class="data">
+            <div class="d1 tit">Item</div>
+            <div class="d2 tit">Quantity</div>
+            <div class="d3 tit">Price</div>
         </div>
-        <div id="child_2">
-            <div>
-                <h3>INTERNATIONAL</h3>
-                <a href="">NR - CA</a>
-                <a href="">NR - UK</a>
-                <a href="">NR - US</a>
-                <a href="">NR - Österreich</a>
-                <a href="">NR - Schweiz</a>
-                <a href="">NR - Deutschland</a>
-                <a href="">NR - España</a>
-                <a href="">NR - France</a>
-                <a href="">NR - Italia</a>
-                <a href="">NR - 日本</a>
-                <a href="">NR - België</a>
-                <a href="">NR - Nederland</a>
+        <div id="flex">
+            <div class="table">
+                <table id="tab">
+                    <thead>
+                        <tr>
+                            <th class="header1">Item</th>
+                            <th class="header2">Quantity</th>
+                            <th class="header3">Price</th>
+                        </tr>
+                    </thead>
+        <!--Here tbody will be added through the JS -->
+                </table>
             </div>
-            <div>
-                <h3>HELP AND INFO</h3>
-                <a href="./service_page.html">Help centre</a>
-                <a href="">About us</a>
-                <a href="">Shipping policy</a>
-                <a href="">Returns policy</a>
-                <a href=""> Payments</a>
-                <a href="">Refund policy</a>
-                <a href="">Developers</a>
-                <a href="">Careers</a>
-                <a href="">Contact</a>
-                <a href="">Terms & conditions</a>
-                <a href="">Privacy & cookie policy</a>
-                <a href="">Intellectual property</a>
-                <a href="">Categories</a>
-                <a href="">Become a partner</a>
-                <a href="">NR Insights</a>
-                <a href="">NR News</a>
+           
+            <div class="total">
+                <h2>ORDER SUMMARY</h2>
+                <div class="bill" id="subtotal">
+                    <!-- <p>Subtotal</p>
+                    <p>$73</p> -->
+                </div>
+                <div class="bill">
+                    <p>Shipping Economy Ground</p>
+                    <p>$5.00</p>
+                </div>
+                <div class="bill">
+                    <p>Sales Tax</p>
+                    <p>$3.00</p>
+                </div>
+                <div class="bill" id="e-total">
+                    <!-- <h4>Estimate Total</h4>
+                    <h4>$82</h4> -->
+                </div>
+                <button id="click">CHECKOUT</button>
+                <div class="pay">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTAwIDMyIiB4bWxucz0iaHR0cDomI3gyRjsmI3gyRjt3d3cudzMub3JnJiN4MkY7MjAwMCYjeDJGO3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCI+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAxMiA0LjkxNyBMIDQuMiA0LjkxNyBDIDMuNyA0LjkxNyAzLjIgNS4zMTcgMy4xIDUuODE3IEwgMCAyNS44MTcgQyAtMC4xIDI2LjIxNyAwLjIgMjYuNTE3IDAuNiAyNi41MTcgTCA0LjMgMjYuNTE3IEMgNC44IDI2LjUxNyA1LjMgMjYuMTE3IDUuNCAyNS42MTcgTCA2LjIgMjAuMjE3IEMgNi4zIDE5LjcxNyA2LjcgMTkuMzE3IDcuMyAxOS4zMTcgTCA5LjggMTkuMzE3IEMgMTQuOSAxOS4zMTcgMTcuOSAxNi44MTcgMTguNyAxMS45MTcgQyAxOSA5LjgxNyAxOC43IDguMTE3IDE3LjcgNi45MTcgQyAxNi42IDUuNjE3IDE0LjYgNC45MTcgMTIgNC45MTcgWiBNIDEyLjkgMTIuMjE3IEMgMTIuNSAxNS4wMTcgMTAuMyAxNS4wMTcgOC4zIDE1LjAxNyBMIDcuMSAxNS4wMTcgTCA3LjkgOS44MTcgQyA3LjkgOS41MTcgOC4yIDkuMzE3IDguNSA5LjMxNyBMIDkgOS4zMTcgQyAxMC40IDkuMzE3IDExLjcgOS4zMTcgMTIuNCAxMC4xMTcgQyAxMi45IDEwLjUxNyAxMy4xIDExLjIxNyAxMi45IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAzNS4yIDEyLjExNyBMIDMxLjUgMTIuMTE3IEMgMzEuMiAxMi4xMTcgMzAuOSAxMi4zMTcgMzAuOSAxMi42MTcgTCAzMC43IDEzLjYxNyBMIDMwLjQgMTMuMjE3IEMgMjkuNiAxMi4wMTcgMjcuOCAxMS42MTcgMjYgMTEuNjE3IEMgMjEuOSAxMS42MTcgMTguNCAxNC43MTcgMTcuNyAxOS4xMTcgQyAxNy4zIDIxLjMxNyAxNy44IDIzLjQxNyAxOS4xIDI0LjgxNyBDIDIwLjIgMjYuMTE3IDIxLjkgMjYuNzE3IDIzLjggMjYuNzE3IEMgMjcuMSAyNi43MTcgMjkgMjQuNjE3IDI5IDI0LjYxNyBMIDI4LjggMjUuNjE3IEMgMjguNyAyNi4wMTcgMjkgMjYuNDE3IDI5LjQgMjYuNDE3IEwgMzIuOCAyNi40MTcgQyAzMy4zIDI2LjQxNyAzMy44IDI2LjAxNyAzMy45IDI1LjUxNyBMIDM1LjkgMTIuNzE3IEMgMzYgMTIuNTE3IDM1LjYgMTIuMTE3IDM1LjIgMTIuMTE3IFogTSAzMC4xIDE5LjMxNyBDIDI5LjcgMjEuNDE3IDI4LjEgMjIuOTE3IDI1LjkgMjIuOTE3IEMgMjQuOCAyMi45MTcgMjQgMjIuNjE3IDIzLjQgMjEuOTE3IEMgMjIuOCAyMS4yMTcgMjIuNiAyMC4zMTcgMjIuOCAxOS4zMTcgQyAyMy4xIDE3LjIxNyAyNC45IDE1LjcxNyAyNyAxNS43MTcgQyAyOC4xIDE1LjcxNyAyOC45IDE2LjExNyAyOS41IDE2LjcxNyBDIDMwIDE3LjQxNyAzMC4yIDE4LjMxNyAzMC4xIDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSA1NS4xIDEyLjExNyBMIDUxLjQgMTIuMTE3IEMgNTEgMTIuMTE3IDUwLjcgMTIuMzE3IDUwLjUgMTIuNjE3IEwgNDUuMyAyMC4yMTcgTCA0My4xIDEyLjkxNyBDIDQzIDEyLjQxNyA0Mi41IDEyLjExNyA0Mi4xIDEyLjExNyBMIDM4LjQgMTIuMTE3IEMgMzggMTIuMTE3IDM3LjYgMTIuNTE3IDM3LjggMTMuMDE3IEwgNDEuOSAyNS4xMTcgTCAzOCAzMC41MTcgQyAzNy43IDMwLjkxNyAzOCAzMS41MTcgMzguNSAzMS41MTcgTCA0Mi4yIDMxLjUxNyBDIDQyLjYgMzEuNTE3IDQyLjkgMzEuMzE3IDQzLjEgMzEuMDE3IEwgNTUuNiAxMy4wMTcgQyA1NS45IDEyLjcxNyA1NS42IDEyLjExNyA1NS4xIDEyLjExNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny41IDQuOTE3IEwgNTkuNyA0LjkxNyBDIDU5LjIgNC45MTcgNTguNyA1LjMxNyA1OC42IDUuODE3IEwgNTUuNSAyNS43MTcgQyA1NS40IDI2LjExNyA1NS43IDI2LjQxNyA1Ni4xIDI2LjQxNyBMIDYwLjEgMjYuNDE3IEMgNjAuNSAyNi40MTcgNjAuOCAyNi4xMTcgNjAuOCAyNS44MTcgTCA2MS43IDIwLjExNyBDIDYxLjggMTkuNjE3IDYyLjIgMTkuMjE3IDYyLjggMTkuMjE3IEwgNjUuMyAxOS4yMTcgQyA3MC40IDE5LjIxNyA3My40IDE2LjcxNyA3NC4yIDExLjgxNyBDIDc0LjUgOS43MTcgNzQuMiA4LjAxNyA3My4yIDYuODE3IEMgNzIgNS42MTcgNzAuMSA0LjkxNyA2Ny41IDQuOTE3IFogTSA2OC40IDEyLjIxNyBDIDY4IDE1LjAxNyA2NS44IDE1LjAxNyA2My44IDE1LjAxNyBMIDYyLjYgMTUuMDE3IEwgNjMuNCA5LjgxNyBDIDYzLjQgOS41MTcgNjMuNyA5LjMxNyA2NCA5LjMxNyBMIDY0LjUgOS4zMTcgQyA2NS45IDkuMzE3IDY3LjIgOS4zMTcgNjcuOSAxMC4xMTcgQyA2OC40IDEwLjUxNyA2OC41IDExLjIxNyA2OC40IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC43IDEyLjExNyBMIDg3IDEyLjExNyBDIDg2LjcgMTIuMTE3IDg2LjQgMTIuMzE3IDg2LjQgMTIuNjE3IEwgODYuMiAxMy42MTcgTCA4NS45IDEzLjIxNyBDIDg1LjEgMTIuMDE3IDgzLjMgMTEuNjE3IDgxLjUgMTEuNjE3IEMgNzcuNCAxMS42MTcgNzMuOSAxNC43MTcgNzMuMiAxOS4xMTcgQyA3Mi44IDIxLjMxNyA3My4zIDIzLjQxNyA3NC42IDI0LjgxNyBDIDc1LjcgMjYuMTE3IDc3LjQgMjYuNzE3IDc5LjMgMjYuNzE3IEMgODIuNiAyNi43MTcgODQuNSAyNC42MTcgODQuNSAyNC42MTcgTCA4NC4zIDI1LjYxNyBDIDg0LjIgMjYuMDE3IDg0LjUgMjYuNDE3IDg0LjkgMjYuNDE3IEwgODguMyAyNi40MTcgQyA4OC44IDI2LjQxNyA4OS4zIDI2LjAxNyA4OS40IDI1LjUxNyBMIDkxLjQgMTIuNzE3IEMgOTEuNCAxMi41MTcgOTEuMSAxMi4xMTcgOTAuNyAxMi4xMTcgWiBNIDg1LjUgMTkuMzE3IEMgODUuMSAyMS40MTcgODMuNSAyMi45MTcgODEuMyAyMi45MTcgQyA4MC4yIDIyLjkxNyA3OS40IDIyLjYxNyA3OC44IDIxLjkxNyBDIDc4LjIgMjEuMjE3IDc4IDIwLjMxNyA3OC4yIDE5LjMxNyBDIDc4LjUgMTcuMjE3IDgwLjMgMTUuNzE3IDgyLjQgMTUuNzE3IEMgODMuNSAxNS43MTcgODQuMyAxNi4xMTcgODQuOSAxNi43MTcgQyA4NS41IDE3LjQxNyA4NS43IDE4LjMxNyA4NS41IDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5NS4xIDUuNDE3IEwgOTEuOSAyNS43MTcgQyA5MS44IDI2LjExNyA5Mi4xIDI2LjQxNyA5Mi41IDI2LjQxNyBMIDk1LjcgMjYuNDE3IEMgOTYuMiAyNi40MTcgOTYuNyAyNi4wMTcgOTYuOCAyNS41MTcgTCAxMDAgNS42MTcgQyAxMDAuMSA1LjIxNyA5OS44IDQuOTE3IDk5LjQgNC45MTcgTCA5NS44IDQuOTE3IEMgOTUuNCA0LjkxNyA5NS4yIDUuMTE3IDk1LjEgNS40MTcgWiI+PC9wYXRoPjwvc3ZnPg" alt="pay_method">
+                </div>
+                <h3>Estimated Shipping Cost</h3>
+                <div class="radio">
+                    <input type="radio" checked="">
+                    <label for="1">Economy Ground (Delivered In<br> 3 - 7 Business Days.): $5.00</label><br>
+                    <input type="radio">
+                    <label for="2">Standard Ground (Delivered In<br> 3 - 5 Business Days.): $8.00</label><br>
+                    <input type="radio">
+                    <label for="e">2 Business Days (Order By 1:30PM<br> EST, No Weekend Deliveries): $13.00</label><br>
+                    <input type="radio">
+                    <label for="4">Overnight (Order By 1:30pm EST, No<br> Weekend Deliveries): $25.00</label><br>
+                </div>
             </div>
         </div>
+    
+    <div class="footer">
+        <img src="./image/footer.png" alt="footer">
     </div>
 </body>
 </html>
 
-<script src="../scripts/women.js"></script>
+<script src="../scripts/cart.js"></script>

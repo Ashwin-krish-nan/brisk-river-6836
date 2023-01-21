@@ -1,0 +1,211 @@
+.shop-item {
+    /* border: 1px solid black; */
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.shop-item>h2 {
+    color: #1e3352;
+}
+#item>h4 {
+    color: grey;
+}
+#all {
+    border: 2px solid purple;
+}
+#flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#flex>.table {
+    width: calc(100% - 390px);
+    /* height: auto; */
+    /* border: 1px solid black; */
+}
+#flex>.total {
+    width: 350px;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+    padding: 25px;
+}
+#flex>.total>h2 {
+    color: #1e3352;
+    margin-left: 20px;
+}
+#flex>.total>.bill {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0px;
+}
+#flex>.total>.bill>p {
+    color: grey;
+    font-size: 15px;
+}
+#flex>.total>.bill>h4 {
+    color: #1e3352;
+}
+#flex>.total>button {
+    width: 100%;
+    padding: 20px ;
+    margin: 13px 0px;
+    background-color: #1e3352;
+    border: 0px;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+#flex>.total>button:hover {
+    background-color: white;
+    color: #1e3352;
+    border: 2px solid #1e3352;
+}
+#flex>.total>.pay {
+    height: 20px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #ffc439;
+    cursor: pointer;
+}
+#flex>.total>h3 {
+    color: #1e3352;
+    margin: 20px 0px;
+}
+#flex>.total>.radio>input {
+    accent-color: red;
+}
+#flex>.total>.radio>label {
+    display: block;
+    margin-left: 35px;
+    margin-top: -20px;
+    color: grey;
+}
+#flex>.table>table {
+    display: block;
+}
+#flex>.table>table>tbody {
+    margin-bottom: 20px;
+}
+/* #flex>.table>table>thead>tr>th {
+    border: 2px solid black;
+}
+#flex>.table>table>tbody>tr>td {
+    border: 2px solid black;
+} */
+#flex>.table>table>thead>tr>.header1 {
+    width: 580px;
+    font-size: 25px;
+    color: #1e3352;
+}
+#flex>.table>table>thead>tr>.header2 {
+    width: 170px;
+    font-size: 25px;
+    color: #1e3352;
+}
+#flex>.table>table>thead>tr>.header3 {
+    width: 170px;
+    font-size: 25px;
+    color: #1e3352;
+}
+#flex>.table>table>tbody {
+    display: block;
+    height: 300px;
+}
+#flex>.table>table>tbody>.cart-row>.item-image {
+    display: block;
+    width: 250px;
+}
+#flex>.table>table>tbody>.cart-row>.item-image>img {
+   width: 100%;
+}
+#flex>.table>table>tbody>.cart-row>.item-det {
+    width: 290px;
+    padding: 15px;
+}
+#flex>.table>table>tbody>.cart-row>.item-det>.name {
+    color: #1e3352;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: -130px;
+    margin-bottom: 20px;
+}
+#flex>.table>table>tbody>.cart-row>.item-det>.det p{
+    font-size: large;
+    margin-bottom: 5px;
+}
+#flex>.table>table>tbody>.cart-row>.item-det>.det span {
+    font-size: small;
+}
+#flex>.table>table>tbody>.cart-row>.quant {
+    width: 150px;
+    padding: 10px;
+}
+#flex>.table>table>tbody>.cart-row>.quant>.selt {
+    margin-top: -130px;
+    margin-bottom: 20px;
+}
+#flex>.table>table>tbody>.cart-row>.quant>.selt>select {
+    padding: 15px 35px;
+    margin-left: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#remove {
+    margin-left: 20px;
+    padding: 6px 15px;
+    border: 0px;
+    background-color: #1e3352;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#remove:hover {
+    background-color: white;
+    border: 2px solid #1e3352;
+    color: #1e3352;
+}
+#flex>.table>table>tbody>.cart-row>.quant h4 {
+    color: green;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#flex>.table>table>tbody>.cart-row>.price {
+    width: 140px;
+    padding: 15px;
+}
+#flex>.table>table>tbody>.cart-row>.price>.p-chi {
+    margin-top: -130px;
+    color: #1e3352;
+    margin-left: 30px;
+}
+/* #flex>.table>table>tbody>tr>td {
+    border: 2px solid black;
+} */
+
+
+.data {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 69%;
+}
+.data>.tit {
+    font-size: 25px;
+    color: #1e3352;
+}
+.data>.d1 {
+    margin-left: 250px;
+}
+.data>.d2 {
+    margin-left: 310px;
+}
+.data>.d3 {
+    margin-left: 70px;
+}

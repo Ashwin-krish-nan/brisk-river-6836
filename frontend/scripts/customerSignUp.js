@@ -27,7 +27,7 @@
 
         if(res.ok==true){
             alert(`Hello ${user_data.first_name}, You are Registration Successfully Completed`)
-            window.location.href = "./frontend/html/index.html"
+            window.location.href = "./frontend/html/customersigninPage.html"
         }
     } catch (error) {
         console.log(error);
