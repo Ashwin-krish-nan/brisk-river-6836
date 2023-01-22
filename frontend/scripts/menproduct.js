@@ -8,7 +8,7 @@
 
  async function display(){
     try {
-        let res = await fetch("http://localhost:3080/men/",{
+        let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/men/",{
             headers: {
                 'content-type': 'application/json',
                 Authorization:localStorage.getItem("token")

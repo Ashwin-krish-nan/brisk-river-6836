@@ -17,17 +17,22 @@
     }
 
     try {
-        let res = await fetch("http://localhost:3080/register", {
+        let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/register", {
             method: 'POST',
             headers: {
             'content-type': 'application/json'
             },
             body: JSON.stringify(user_data)
         })
-
-        if(res.ok==true){
+        if(res.status==409){
+         alert("Email already in use")
+         console.log(res.status);
+        
+        }
+       else if(res.status==200){
             alert(`Hello ${user_data.first_name}, You are Registration Successfully Completed`)
             window.location.href = "./frontend/html/customersigninPage.html"
+            console.log(res.status);
         }
     } catch (error) {
         console.log(error);

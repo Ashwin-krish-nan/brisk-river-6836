@@ -9,7 +9,7 @@
 
  async function display(){
     try {
-        let res = await fetch("http://localhost:3080/women/",{
+        let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/women/",{
             headers: {
                 'content-type': 'application/json',
                 Authorization:localStorage.getItem("token")
@@ -77,7 +77,7 @@ async function add_Cart(id){
       console.log(newobj);
       
       try {
-         let res = await fetch("http://localhost:3080/cart/create", {
+         let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/cart/create", {
              method: 'POST',
              headers: {
                  'content-type': 'application/json',

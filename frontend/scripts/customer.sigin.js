@@ -10,7 +10,7 @@ signinContainer.innerHTML = `
                     </p><br>
                     <p>
                         <label>Password</label>
-                      <input id="password" type="password", placeholder="Enter you password" required="required"/>
+                      <input id="password" type="password"  autocomplete="current-password" placeholder="Enter you password" required="required"/>
                    </p><br>
                    <p class="login button">
                     <input id="button" type="submit", value="Sign In"/>
@@ -34,7 +34,7 @@ let  sign_IN= document.querySelector("#signin_page form")
 
     //console.log(user_data);
     try {
-        let res = await fetch("http://localhost:3080/login", {
+        let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/login", {
             method: 'POST',
             headers: {
             'content-type': 'application/json'
@@ -45,12 +45,16 @@ let  sign_IN= document.querySelector("#signin_page form")
         let data =await res.json()
         localStorage.setItem("token",data.token)
          console.log(data)
-
-        if(res.ok==true){
+        
+         if(res.ok==409){
+             alert(`Wrong credentials`)
+        }
+        else if(res.ok==true){
             alert(`Welcome, You are Successfully signedin`)
             window.location.href = "./index2.html"
         }
     } catch (error) {
+       
         console.log(error);
     }
 

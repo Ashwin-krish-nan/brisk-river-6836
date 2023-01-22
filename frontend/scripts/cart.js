@@ -6,7 +6,7 @@
 
  async function display(){
     try {
-        let res = await fetch("http://localhost:3080/cart/",{
+        let res = await fetch("https://orange-red-clownfish-tam.cyclic.app/cart/",{
             headers: {
                 'content-type': 'application/json',
                 Authorization:localStorage.getItem("token")
@@ -22,6 +22,7 @@
     }
  }
 
+
  function Render(cart_data){
     //console.log(cart_data);
     let length = document.querySelector("#item")
@@ -32,7 +33,7 @@
 
     let New_data = cart_data.map((elm)=>{
        return`
-        <tbody>
+        <tbody id="cuts">
             <tr class="cart-row">
                 <td class="item-image">
                     <img src=${elm.avatar} alt="producr">
@@ -60,8 +61,8 @@
                 </td>
                 <td class="price">
                     <div class="p-chi">
-                        <h3>$${elm.price}.00</h3>
-                        <p>Comp.Value:<br>$${elm.price*2}</p>
+                        <h3>₹${elm.price}.00</h3>
+                        <p>off <br>₹${elm.price*2}</p>
                     </div>
                 </td>
             </tr>
@@ -80,13 +81,13 @@
     let add_total = document.querySelector("#subtotal")
     add_total.innerHTML = `
         <p>Subtotal</p>
-        <p>$${total_p}.00</p>
+        <p>₹${total_p}.00</p>
     `;
 
     let totel_amount = document.querySelector("#e-total")
     totel_amount.innerHTML = `
         <h4>Estimate Total</h4>
-        <h4>$${total_p+5+3}.00</h4>
+        <h4>₹${total_p+5+3}.00</h4>
     `
 
     //-------------------------------------------//
@@ -104,7 +105,7 @@
 
 async function Remove_data(id){
     try {
-        let res = await fetch(`http://localhost:3080/cart/delete/${id}`,{
+        let res = await fetch(`https://orange-red-clownfish-tam.cyclic.app/cart/delete/${id}`,{
             method:"DELETE",
             headers:{
                 'content-type': 'application/json',
@@ -123,3 +124,9 @@ async function Remove_data(id){
         console.log(error);
     }
 }
+
+let checkout = document.querySelector("#click")
+checkout.addEventListener("click",()=>{
+    alert("payment succesfully made")
+   
+})
